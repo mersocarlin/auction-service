@@ -26,7 +26,7 @@ namespace AuctionService.Domain.Models
         {
             get
             {
-                if (this.Item == null)
+                if (this.Item == null || this.History.Count == 0)
                 {
                     return 0;
                 }

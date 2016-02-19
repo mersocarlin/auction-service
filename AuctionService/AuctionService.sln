@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuctionService.Business", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuctionService.Business.Tests", "AuctionService.Business.Tests\AuctionService.Business.Tests.csproj", "{847B187C-4D41-4DAF-A005-A8F466E0A238}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuctionService.Api", "AuctionService.Api\AuctionService.Api.csproj", "{ED4FFC95-223B-4A6C-BC84-5903373299B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{847B187C-4D41-4DAF-A005-A8F466E0A238}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{847B187C-4D41-4DAF-A005-A8F466E0A238}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{847B187C-4D41-4DAF-A005-A8F466E0A238}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED4FFC95-223B-4A6C-BC84-5903373299B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED4FFC95-223B-4A6C-BC84-5903373299B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED4FFC95-223B-4A6C-BC84-5903373299B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED4FFC95-223B-4A6C-BC84-5903373299B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -39,6 +39,8 @@ namespace AuctionService.Api
 
             formatters.JsonFormatter.SerializerSettings.PreserveReferencesHandling = PreserveReferencesHandling.Objects;
 
+            config.EnableCors();
+
             config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(

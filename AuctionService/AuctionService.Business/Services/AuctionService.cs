@@ -18,7 +18,34 @@ namespace AuctionService.Business.Services
 
         public IEnumerable<Auction> Get()
         {
-            return this._repository.Get();
+            var collection = this._repository.Get();
+
+            if (collection == null)
+            {
+                return null;
+            }
+
+            return from obj in collection
+                   select new Auction
+                   {
+                       Id = obj.Id,
+                       BidStep = obj.BidStep,
+                       IsFinished = obj.IsFinished,
+                       Item = obj.Item,
+                       ItemId = obj.ItemId,
+                       History = (from hi in obj.History
+                                 select new AuctionHistory
+                                 {
+                                     Id = hi.Id,
+                                     AuctionId = hi.AuctionId,
+                                     BuyerId = hi.BuyerId,
+                                     Buyer = hi.Buyer,
+                                     CreatedAt = hi.CreatedAt,
+                                 })
+                                 .OrderByDescending(hi => hi.CreatedAt)
+                                 .Take(5)
+                                 .ToList()
+                   };
         }
 
         public Auction GetById(int id)

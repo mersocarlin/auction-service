@@ -1,4 +1,5 @@
 ﻿using AuctionService.Api.Helpers;
+using AuctionService.Business.Services;
 using AuctionService.Data.DataContexts;
 using AuctionService.Data.Repositories;
 using AuctionService.Domain.Contracts.Repositories;
@@ -19,8 +20,10 @@ namespace AuctionService.Api
             container.RegisterType<AuctionServiceContext, AuctionServiceContext>();
 
             container.RegisterType<IAuctionRepository, AuctionRepository>();
+            container.RegisterType<IBuyerRepository, BuyerRepository>();
 
             container.RegisterType<IAuctionService, Business.Services.AuctionService>();
+            container.RegisterType<IBuyerService, BuyerService>();
 
             config.DependencyResolver = new UnityResolver(container);
             #endregion

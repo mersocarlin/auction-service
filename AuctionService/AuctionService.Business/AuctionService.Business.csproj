@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AuctionService.cs" />
+    <Compile Include="Services\BuyerService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AuctionService.Data\AuctionService.Data.csproj">

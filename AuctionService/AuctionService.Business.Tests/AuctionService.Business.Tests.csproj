@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AuctionServiceTest.cs" />
+    <Compile Include="Services\BuyerServiceTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AuctionService.Business\AuctionService.Business.csproj">

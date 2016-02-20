@@ -45,6 +45,7 @@
     <Compile Include="Contracts\Repositories\IItemRepository.cs" />
     <Compile Include="Contracts\Repositories\IRepository.cs" />
     <Compile Include="Contracts\Services\IAuctionService.cs" />
+    <Compile Include="Contracts\Services\IBuyerService.cs" />
     <Compile Include="Models\Auction.cs" />
     <Compile Include="Models\AuctionHistory.cs" />
     <Compile Include="Models\Buyer.cs" />

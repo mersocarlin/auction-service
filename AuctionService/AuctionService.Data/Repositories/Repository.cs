@@ -16,7 +16,7 @@ namespace AuctionService.Data.Repositories
             this._context = context;
         }
 
-        public IEnumerable<TEntity> Get()
+        public virtual IEnumerable<TEntity> Get()
         {
             return _context.Set<TEntity>().AsEnumerable();
         }
